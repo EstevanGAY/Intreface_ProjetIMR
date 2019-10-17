@@ -51,15 +51,9 @@
         <?php
         	include('header.php');
         ?>
-			<div class="container">
-				<div class=" col l10">
-					<p>Dernière mise à jour : DATE et HEURE</p>
-				</div>
-			</div>
-
 		<main>	
 
-			<div class="row">
+			<div class="row" id="ligne_principale">
 
 				<div class="col l8">
 
@@ -81,12 +75,18 @@
 						</div>
 
 					</div>
-					<div class="col l4 s12 m6" >
-
+					<div class="col l4 s12 m6" id="camembert" >
+                        <div class="card white">
+                            <div class="card-content white-text">
+                                <span class="card-title black-text center-align">Dernière mise à jour :</span>
+                                <div class="card-content black-text">
+                                    <span>Date et heure</span>
+                                </div>
+                            </div>
+                        </div>
 						<div class="card white">
-
-							<div class="card-content white-text">
-								<span class="card-title black-text center-align">Bouées non conforme</span>
+							<div class="card-content ">
+								<span class="card-title black-text center-align">État des Bouées</span>
                                     <canvas id="camembertBouees"></canvas>
 							</div>
 						</div>
